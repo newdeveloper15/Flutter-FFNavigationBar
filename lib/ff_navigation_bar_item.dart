@@ -14,7 +14,8 @@ import 'ff_navigation_bar_theme.dart';
 // ignore: must_be_immutable
 class FFNavigationBarItem extends StatelessWidget {
   final String label;
-  final IconData iconData;
+  //final IconData iconData;
+  final Widget iconData;
   final Duration animationDuration;
   Color selectedBackgroundColor;
   Color selectedForegroundColor;
@@ -77,7 +78,8 @@ class FFNavigationBarItem extends StatelessWidget {
     );
   }
 
-  Widget _makeIconArea(double itemWidth, IconData iconData) {
+  //Widget _makeIconArea(double itemWidth, IconData iconData) {
+  Widget _makeIconArea(double itemWidth, Widget iconData) {
     bool isSelected = _isItemSelected();
     double radius = itemWidth / 2;
     double innerBoxSize = itemWidth - 8;
@@ -101,11 +103,13 @@ class FFNavigationBarItem extends StatelessWidget {
   }
 
   Widget _makeIcon(
-    IconData iconData,
-  ) {
+      //IconData iconData,
+      Widget iconData,
+      ) {
     bool isSelected = _isItemSelected();
-    return Icon(
-      iconData,
+    return IconButton(
+      //iconData,
+      icon: iconData,
       color: isSelected
           ? selectedForegroundColor ?? theme.selectedItemIconColor
           : theme.unselectedItemIconColor,

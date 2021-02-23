@@ -62,26 +62,26 @@ class _MyHomePageState extends State<MyHomePage> {
         },
         items: [
           FFNavigationBarItem(
-            iconData: Icons.calendar_today,
+            iconData: Icon(Icons.calendar_today),
             label: 'Bar Theme',
           ),
           FFNavigationBarItem(
-            iconData: Icons.people,
+            iconData: Icon(Icons.people),
             label: 'Orange',
             selectedBackgroundColor: Colors.orange,
           ),
           FFNavigationBarItem(
-            iconData: Icons.attach_money,
+            iconData: Icon(Icons.attach_money),
             label: 'Purple',
             selectedBackgroundColor: Colors.purple,
           ),
           FFNavigationBarItem(
-            iconData: Icons.note,
+            iconData: Icon(Icons.note),
             label: 'Blue',
             selectedBackgroundColor: Colors.blue,
           ),
           FFNavigationBarItem(
-            iconData: Icons.settings,
+            iconData: Icon(Icons.settings),
             label: 'Red Item',
             selectedBackgroundColor: Colors.red,
           ),
